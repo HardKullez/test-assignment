@@ -82,7 +82,7 @@ export default {
           required: helpers.withMessage('Phone is required', required),
           phonePattern: helpers.withMessage(
             'Must be a valid BY phone +375 (XX) XXX-XX-XX',
-            helpers.regex(/^\+375 \((17|29|33|44)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$/)
+            helpers.regex(/^\+?375 ?\(?(17|29|33|44)\)? ?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$/)
           )
         }
       }
