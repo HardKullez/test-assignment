@@ -129,15 +129,6 @@ export default {
     this.getUsers()
   },
   methods: {
-    selectRecord(id) {
-      if (this.selectedUserIds.has(id)) {
-        this.selectedUserIds.delete(id)
-
-        return
-      }
-
-      this.selectedUserIds.add(id)
-    },
     selectAllRecords() {
       if (this.areAllRecordsSelected) {
         this.selectedUserIds.clear()
